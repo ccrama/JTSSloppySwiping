@@ -94,7 +94,7 @@ public final class SloppySwiping: NSObject {
     fileprivate weak var navigationController: UINavigationController?
     fileprivate var isInteractivelyPopping: Bool = false
     fileprivate var interactivePopAnimator: InteractivePopAnimator
-    fileprivate let popRecognizer: UIPanGestureRecognizer
+    public let popRecognizer: UIPanGestureRecognizer
 
     fileprivate var isAnimatingANonInteractiveTransition: Bool = false {
         didSet {
